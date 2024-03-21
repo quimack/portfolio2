@@ -1,0 +1,401 @@
+@font-face {
+  font-family: "Inter tight", sans-serif;
+  src: url(./assets/fonts/InterTight-VariableFont_wght.ttf);
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter tight", sans-serif;
+}
+
+.home, footer {
+  background-color: #3f4449;
+  color: #a0cee9;
+}
+
+footer{
+  font-size: 1.1em;
+  font-weight: 100;
+  /* text-transform: uppercase; */
+}
+
+.padding-section {
+  padding: 2em 3em 4em 3em;
+}
+
+.wrapper {
+  /* font-family: "Inter tight", sans-serif; */
+  /* min-height: 100vh; */
+  height: 100%;
+  width: 100%;
+  /* color: #a0cee9; */
+  background: url(./assets/images/avifauna.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.txt-center {
+  text-align: center;
+}
+.txt-end {
+  text-align: end;
+}
+
+.txt-justify {
+  text-align: justify;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.figure {
+  height: 150px;
+  width: 75px;
+  border-radius: 150px 0 0 150px;
+  background-color: #a0cee9;
+}
+
+.figure.dark {
+  background-color: #3f4449;
+}
+.title {
+  max-width: 400px;
+  font-size: 1.6rem !important;
+}
+
+.title-section {
+  font-family: "Inter tight", sans-serif;
+  text-transform: uppercase;
+  margin-left: 1em;
+  margin-block: 0.3rem;
+  font-size: 2.3rem;
+}
+
+.color-dark {
+  color: #3f4449 !important;
+}
+
+.color-primary {
+  color: #a0cee9;
+}
+
+.color-secondary {
+  color: #fbf4ac;
+}
+
+.projects-btn {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #575757;
+  position: relative;
+  margin-right: 0.3rem;
+}
+
+.round-text {
+  display: block;
+  animation: rotating 6s infinite linear;
+  position: absolute;
+}
+
+ion-icon {
+  color: #c2c2c2;
+  font-size: 24px;
+}
+
+p.about {
+  font-size: 1.4rem;
+  padding-right: 60px;
+  margin: 0;
+  max-width: 700px;
+  color: #a0cee9;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.weight-200 {
+  font-weight: 100;
+}
+
+.typing-container {
+  display: inline-block;
+}
+
+h1.typed-out {
+  border-right: 0.15em solid #a0cee9;
+}
+
+.typed-out {
+  transform: scaleX(-1);
+  overflow: hidden;
+  width: 0;
+  white-space: nowrap;
+  animation: typing 2s steps(20, end) forwards, blink 0.8s infinite;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 0.3rem;
+}
+
+.icon.html-icon {
+  background: url(./assets/icons/icons8-html-50.png) no-repeat center / cover;
+}
+
+.icon.css-icon {
+  background: url(./assets/icons/icons8-css-50.png) no-repeat center / cover;
+}
+.icon.sass-icon {
+  background: url(./assets/icons/icons8-sass-50.png) no-repeat center / cover;
+}
+
+.icon.js-icon {
+  background: url(./assets/icons/icons8-javascript-50.png) no-repeat center /
+    cover;
+}
+
+.icon.ts-icon {
+  background: url(./assets/icons/icons8-typescript-50.png) no-repeat center /
+    cover;
+}
+
+.icon.python-icon {
+  background: url(./assets/icons/icons8-python-50.png) no-repeat center / cover;
+}
+
+.icon.angular-icon {
+  background: url(./assets/icons/icons8-angular-50.png) no-repeat center / cover;
+}
+
+.icon.google-icon {
+  background: url(./assets/icons/icons8-google-cloud-platform-50.png) no-repeat
+    center / cover;
+}
+
+.btn-container {
+  width: 100%;
+  height: 500px;
+}
+
+a, button {
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.3em;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.5s allow-discrete;
+  border: 1px solid #fbf4ac;
+
+  color: #fbf4ac;
+  background: transparent;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a:hover, button:hover {
+  border: 1px solid #fbf4ac;
+  padding: .8em 1.5em;
+  background: transparent;
+  border-radius: 40px;
+  font-size: 1.6em;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+
+/* PARALLAX */
+.parallax-item {
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  width: 100%;
+  padding-top: 6em;
+  cursor: pointer;
+}
+
+.parallax-item:nth-child(2) {
+  background-size: cover;
+}
+
+.parallax-item:nth-child(3) {
+  background: url(./assets/images/spanner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 600px;
+}
+
+.parallax-item:nth-child(4) {
+  background-color: #fbf4ac;
+  color: #3f4449;
+  height: 100vh;
+  padding-top: 2em;
+  cursor: default;
+}
+
+/* FORM */
+.input-container {
+  padding: 0.2em;
+}
+input {
+  background-color: transparent;
+  transition: all 0.5s allow-discrete;
+  border: 1px solid #747c83;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  color: #3f4449;
+  width: 172px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #3f4449;
+  outline: none;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Inter tight", sans-serif;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: "Inter tight", sans-serif;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  font-family: "Inter tight", sans-serif;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-family: "Inter tight", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+textarea {
+  border: 1px solid #747c83;
+  overflow-y: auto;
+  resize: none;
+  background-color: transparent;
+  transition: all 0.5s allow-discrete;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  color: #3f4449;
+  width: 380px;
+}
+
+/* SCROLLBAR */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #3f4449;
+  border-radius: 30px;
+  height: 10px;
+}
+
+/* ANIMATIONS */
+@keyframes rotating {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes color {
+  0% {
+    color: #000;
+  }
+  40% {
+    color: #bbf;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* #FBF4AC */
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #a0cee9;
+  }
+}

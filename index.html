@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section id="parallax" class="home">
+        <header class="flex-row align-start justify-between padding-section">
+          <div class="right-side flex-row align-center">
+            <div class="figure"></div>
+            <div class="flex-column typing-container">
+              <h1 class="title title-section typed-out">
+                Fullstack web developer
+              </h1>
+            </div>
+          </div>
+          <div class="left-side">
+            <a
+              href="portfolio"
+              class="projects-btn"
+              data-animation="rotate_up"
+              style="opacity: 1; transform: translate(0px, 0px)"
+            >
+              <img
+                class="round-text"
+                src="../assets/images/round-text.png"
+                alt=""
+                width="120px"
+              />
+              <ion-icon class="arrow-icon" name="arrow-down-outline"></ion-icon>
+            </a>
+          </div>
+        </header>
+
+        <main class="flex-row justify-between">
+          <div class="section-about padding-section">
+            <p class="about txt-justify">
+              In the realm of <span class="weight-200"> programming</span>, I
+              find a world teeming with opportunities and personal growth.
+            </p>
+            <p class="about txt-center">
+              I've chosen to fully
+              <span class="weight-200"> immerse</span> myself in this field
+              because I've discovered that the logic and intricacies of coding
+              have a
+              <span class="weight-200"> magnetic </span>
+              pull on me, leading me on a journey that keeps me engaged for
+              <span class="weight-200">hours</span>
+              on end.
+            </p>
+            <p class="about txt-end">
+              It's like entering a maze filled with
+              <span class="weight-200"> doors</span> that both entertain and
+              <span class="weight-200"> challenge me.</span>
+            </p>
+          </div>
+
+          <div class="padding-section flex-row align-end">
+            <div class="flex-row align-center">
+              <div class="icon js-icon"></div>
+              <div class="icon ts-icon"></div>
+            </div>
+            <div class="flex-row align-center">
+              <div class="icon html-icon" style="margin-top: 5.5px"></div>
+              <div class="icon css-icon"></div>
+            </div>
+            <div class="flex-row align-center">
+              <div class="icon angular-icon"></div>
+              <div class="icon sass-icon"></div>
+            </div>
+            <div class="flex-row align-center">
+              <div class="icon python-icon"></div>
+              <div class="icon google-icon"></div>
+            </div>
+          </div>
+        </main>
+      </section>
+
+      <div class="parallax-item padding-section color-secondary">
+        <h1 class="title-section">AVIFAUNA</h1>
+        <div class="btn-container flex-row justify-center align-center">
+          <a href="https://avifauna.net/" target="_blank">Visit project</a>
+        </div>
+      </div>
+      <div class="parallax-item padding-section color-secondary">
+        <h2 class="title-section">INSA</h2>
+        <div class="btn-container flex-row justify-center align-center">
+          <a href="https://distribuidorainsa.com.ar/">Visit project</a>
+        </div>
+      </div>
+
+      <div class="parallax-item">
+        <header class="flex-row align-center padding-section">
+          <div class="figure dark"></div>
+          <div class="flex-column typing-container">
+            <h1 class="title title-section">Got any projects in mind?</h1>
+          </div>
+        </header>
+
+        <main class="flex-row justify-between">
+          <div class="section-about padding-section">
+            <p class="about color-dark txt-justify">
+              If you're seeking <span class="weight-200">assistance</span> or
+              support with your project, feel free to reach out.
+            </p>
+            <p class="about color-dark txt-end">
+              I'm available to collaborate with you and brainstorm
+              <span class="weight-200">creative</span> solutions tailored to
+              your <span class="weight-200">needs.</span>
+            </p>
+          </div>
+          <div class="section-about padding-section">
+            <form action="">
+              <div class="flex-row">
+                <div class="input-container">
+                  <input type="text" name="firstname" id="firstname" placeholder="First name"/>
+                </div>
+                <div class="input-container">
+                  <input type="text" name="lastname" id="lastname" placeholder="Last name"/>
+                </div>
+              </div>
+              <div class="flex-row">
+                <div class="input-container">
+                  <input type="email" name="email" id="email"  placeholder="Email"/>
+                </div>
+                <div class="input-container">
+                  <input type="number" name="phone" id="phone" placeholder="Phone"/>
+                </div>
+              </div>
+              <div class="input-container">
+                <textarea
+                  maxlength="400"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <footer class="padding-section flex-row justify-center">
+    Macarena Quiven Giacopazzi
+  </footer>
+</html>
