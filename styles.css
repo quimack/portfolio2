@@ -222,7 +222,7 @@ h1.typed-out {
   height: 500px;
 }
 
-a, button {
+a.btn, button {
   border: 1px solid transparent;
   outline: none;
   border-radius: 30px;
@@ -239,7 +239,7 @@ a, button {
   text-decoration: none;
 }
 
-a:hover, button:hover {
+a.btn:hover, button:hover {
   border: 1px solid #fbf4ac;
   padding: .8em 1.5em;
   background: transparent;
