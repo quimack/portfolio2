@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Macarena Quiven</title>
     <link rel="stylesheet" href="./styles.css" />
     <script
       type="module"
@@ -16,6 +16,7 @@
     <script src="./index.js" defer></script>
   </head>
   <body>
+    <div id="spinner" class="spinner"></div>
     <div class="wrapper">
       <section id="parallax" class="home">
         <header class="flex-row align-start justify-between padding-section">
@@ -23,7 +24,8 @@
             <div class="figure"></div>
             <div class="flex-column typing-container">
               <h1 class="title title-section typed-out">
-                Fullstack web developer
+                Fullstack web <br class="none" />
+                developer
               </h1>
             </div>
           </div>
@@ -96,13 +98,28 @@
       <div class="parallax-item padding-section color-secondary">
         <h1 class="title-section">AVIFAUNA</h1>
         <div class="btn-container flex-row justify-center items-center">
-          <a href="https://avifauna.net/" class="btn" target="_blank">Visit project</a>
+          <a href="https://avifauna.net/" class="btn" target="_blank"
+            >Visit project</a
+          >
         </div>
       </div>
       <div class="parallax-item padding-section color-secondary">
         <h2 class="title-section">INSA</h2>
         <div class="btn-container flex-row justify-center items-center">
-          <a href="https://distribuidorainsa.com.ar/" class="btn" target="_blank">Visit project</a>
+          <a
+            href="https://distribuidorainsa.com.ar/"
+            class="btn"
+            target="_blank"
+            >Visit project</a
+          >
+        </div>
+      </div>
+      <div class="parallax-item padding-section color-secondary">
+        <h2 class="title-section">FPB SOLAR</h2>
+        <div class="btn-container flex-row justify-center items-center">
+          <a href="https://fpbsolar.com/" class="btn" target="_blank"
+            >Visit project</a
+          >
         </div>
       </div>
 
@@ -114,7 +131,7 @@
           </div>
         </header>
 
-        <main class="flex-row justify-between">
+        <main class="flex-row justify-between items-center">
           <div class="section-about padding-section txt-content">
             <p class="about color-dark txt-justify">
               If you're seeking <span class="weight-200">assistance</span> or
@@ -128,21 +145,41 @@
           </div>
 
           <div class="section-about padding-section form-section">
-            <form action="">
-              <div class="flex-row">
+            <form id="contactForm" action="">
+              <div class="flex-row justify-between mw-100">
                 <div class="input-container">
-                  <input type="text" name="firstname" id="firstname" placeholder="First name"/>
+                  <input
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    placeholder="First name"
+                  />
                 </div>
                 <div class="input-container">
-                  <input type="text" name="lastname" id="lastname" placeholder="Last name"/>
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    placeholder="Last name"
+                  />
                 </div>
               </div>
-              <div class="flex-row">
+              <div class="flex-row justify-between mw-100">
                 <div class="input-container">
-                  <input type="email" name="email" id="email"  placeholder="Email"/>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
                 </div>
                 <div class="input-container">
-                  <input type="number" name="phone" id="phone" placeholder="Phone"/>
+                  <input
+                    type="number"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone"
+                  />
                 </div>
               </div>
               <div class="text-area">
@@ -155,13 +192,83 @@
                   placeholder="Message"
                 ></textarea>
               </div>
+              <div>
+                <button class="dark-btn" type="submit">Send</button>
+              </div>
             </form>
           </div>
         </main>
+        <div id="successModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+              Thank you for reaching out! Your message has been sent
+              successfully. <br />
+              <br />
+              I will get in touch with you shortly
+              <ion-icon
+                name="heart-outline"
+                style="
+                  font-size: 1.2rem;
+                  color: #3f4449;
+                  margin-bottom: -0.2rem;
+                "
+              ></ion-icon>
+            </p>
+          </div>
+        </div>
+        <div id="errorModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+              An unexpected error has occurred. please try again! <br />
+
+              If the issue persists, you can email me directly at
+              macarenaquiven@gmail.com <br />
+              <br />Thank you.
+              <ion-icon
+                name="heart-outline"
+                style="
+                  font-size: 1.2rem;
+                  color: #3f4449;
+                  margin-bottom: -0.2rem;
+                "
+              ></ion-icon>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
-  <footer class="padding-section flex-row justify-center">
-    Macarena Quiven Giacopazzi
+
+  <footer>
+    <div class="flex-row flex-wrap justify-around w-60">
+      
+      <div class="flex-row">
+        <a href="https://www.linkedin.com/in/macarenaquiven/" target="_blank">
+          <ion-icon name="logo-linkedin" class="footer-item footer-icon"></ion-icon>
+        </a>
+        <a href="https://github.com/quimack" target="_blank">
+          <ion-icon name="logo-github" class="footer-item footer-icon"></ion-icon>
+        </a>
+        <a href="https://wa.me/5491127957486" target="_blank">
+          <ion-icon name="logo-whatsapp" class="footer-item footer-icon"></ion-icon>
+        </a>
+
+      </div>
+      
+      <div class="flex-column">
+        <div id="phoneNumber" class="footer-item flex-row items-center">
+          <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+          +54 911 27957486
+        </div>
+        <ion-icon id="copiedIcon" class="copied-icon" name="copy-outline" class="footer-icon"></ion-icon>
+  
+        <a href="mailto:macarenaquiven@gmail.com" class="footer-item flex-row items-center">
+          <ion-icon name="mail-outline" class="footer-icon"></ion-icon>
+          macarenaquiven@gmail.com
+        </a>
+      </div>
+    </div>
   </footer>
 </html>
